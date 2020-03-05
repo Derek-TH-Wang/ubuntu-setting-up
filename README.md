@@ -31,5 +31,17 @@ ERROR: cannot download default sources list from:
 https://raw.githubusercontent.com/ros/rosdistro/master/rosdep/sources.list.d/20-default.list
 Website may be down.
 
+(1)
 change to the ustc source, then update.
 sudo -E rosdep init
+(2)
+try mutiple times?
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+# rosdep update error:
+reading in sources list data from /etc/ros/rosdep/sources.list.d
+ERROR: unable to process source [https://raw.githubusercontent.com/ros/rosdistro/master/rosdep/osx-homebrew.yaml]:
+	<urlopen error [Errno 111] Connection refused> (https://raw.githubusercontent.com/ros/rosdistro/master/rosdep/osx-homebrew.yaml)
+
+try mutiple times?
