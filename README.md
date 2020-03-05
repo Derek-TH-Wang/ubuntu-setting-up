@@ -15,3 +15,8 @@ deb-src http://mirrors.ustc.edu.cn/ubuntu-ports/ xenial-backports main multivers
 deb-src http://mirrors.ustc.edu.cn/ubuntu-ports/ xenial-proposed main multiverse restricted universe
 deb-src http://mirrors.ustc.edu.cn/ubuntu-ports/ xenial-security main multiverse restricted universe
 deb-src http://mirrors.ustc.edu.cn/ubuntu-ports/ xenial-updates main multiverse restricted universe
+
+----------------------------------------------------------------------------------------------------------------------------------------
+# 下列软件包有未满足的依赖关系：ros-melodic-desktop-full : 依赖......
+sudo apt install aptitude
+sudo  aptitude install ros-melodic-desktop-full
