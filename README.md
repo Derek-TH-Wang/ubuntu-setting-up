@@ -85,3 +85,7 @@ sudo gedit ~./bashrc
 文件的最后添加以下：  
 export LANG=en_US:UTF-8  
 export LANGUAGE=en_US:en  
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+# gazebo7 need by libcurl3, but cmake, ros need by libcurl4, and libcurl3 and libcurl4 cannot exit torgether!!!
