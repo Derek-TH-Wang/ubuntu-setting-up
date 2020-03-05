@@ -18,5 +18,5 @@ deb-src http://mirrors.ustc.edu.cn/ubuntu-ports/ xenial-updates main multiverse 
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 # 下列软件包有未满足的依赖关系：ros-melodic-desktop-full : 依赖......
-sudo apt install aptitude
-sudo  aptitude install ros-melodic-desktop-full
+software & update choose "server for china", then after update, can download ROS
+but this will cause sudo apt-get update error!!!
