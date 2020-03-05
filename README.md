@@ -1,5 +1,8 @@
 # jetson-nano-trick
 
+https://blog.csdn.net/dvd_sun/article/details/88975005
+http://www.manongjc.com/detail/8-ljslmgmshdpltfd.html
+
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 # jetson nano sudo apt-get update ----> 404 not fuund:
@@ -45,3 +48,14 @@ ERROR: unable to process source [https://raw.githubusercontent.com/ros/rosdistro
 	<urlopen error [Errno 111] Connection refused> (https://raw.githubusercontent.com/ros/rosdistro/master/rosdep/osx-homebrew.yaml)
 
 try mutiple times?
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+# Jetson Nano利用官方镜像进行安装后，系统已经安装好了JetPack，cuda，cudaa，OpenCV等组件，需要修改下环境变量才可以使用。
+sudo gedit ~./bashrc
+文件的最后添加以下三行：
+export PATH=/usr/local/cuda-10.0/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
+export CUDA_HOME=$CUDA_HOME:/usr/local/cuda-10.0
+source ~./bashrc
+输入nvcc -V命令进行测试
