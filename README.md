@@ -91,5 +91,6 @@ export LANGUAGE=en_US:en
 # gazebo7 need by libcurl3, but cmake, ros need by libcurl4, and libcurl3 and libcurl4 cannot exit torgether!!!
 install gazebo9  
 
-# before camke jetson-reinforcement, gazebo9, qt4, need to be installed
+# before camke jetson-reinforcement, gazebo9, qt4, pip, pip3 jupyter/ipython notebook need to be installed, cuda env path need to be set 
 sudo apt-get install qt4*
+sudo apt-get install gazebo9
