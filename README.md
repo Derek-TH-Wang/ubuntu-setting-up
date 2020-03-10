@@ -6,6 +6,7 @@ http://www.manongjc.com/detail/8-ljslmgmshdpltfd.html
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 # jetson nano sudo apt-get update ----> 404 not fuund:  
+(1)  
 use ustc source which support armhf software.  
 update  /etc/apt/sources.list file with content below:  
 
@@ -37,6 +38,11 @@ deb http://ports.ubuntu.com/ubuntu-ports/ bionic-security universe restricted ma
 deb-src http://ports.ubuntu.com/ubuntu-ports/ bionic-security universe restricted main multiverse #Added by software-properties  
 deb http://ports.ubuntu.com/ubuntu-ports/ bionic-updates universe restricted main multiverse  
 deb-src http://ports.ubuntu.com/ubuntu-ports/ bionic-updates universe restricted main multiverse #Added by software-properties  
+
+(2)  
+dpkg --print-architecture  
+dpkg --print-foreign-architectures  
+sudo dpkg --remove-architecture ...   
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
@@ -92,5 +98,5 @@ export LANGUAGE=en_US:en
 install gazebo9  
 
 # before camke jetson-reinforcement, gazebo9, qt4, pip, pip3 jupyter/ipython notebook need to be installed, cuda env path need to be set 
-sudo apt-get install qt4*
-sudo apt-get install gazebo9
+sudo apt-get install qt4*  
+sudo apt-get install gazebo9  
