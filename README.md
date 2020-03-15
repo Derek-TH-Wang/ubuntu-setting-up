@@ -108,5 +108,5 @@ python3 -m pip install --upgrade pip
 sudo apt install python3-numpy python3-scipy python3-pandas python3-matplotlib python3-sklearn libhdf5-serial-dev hdf5-tools  
 sudo pip3 install launchpadlib  
 sudo  pip3 install --upgrade setuptools  
-sudo pip3 install --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v42 tensorflow-gpu==1.14.0+nv19.10  
+sudo pip3 install --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v42 tensorflow-gpu==1.14.0+nv19.10   
 
