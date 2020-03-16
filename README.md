@@ -53,28 +53,6 @@ but this will cause sudo apt-get update error
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
-# sudo rosdep init error:  
-ERROR: cannot download default sources list from:  
-https://raw.githubusercontent.com/ros/rosdistro/master/rosdep/sources.list.d/20-default.list  
-Website may be down.  
-
-(1)  
-change to the ustc source, then update.  
-sudo -E rosdep init  
-(2)  
-try mutiple times?  
-
-----------------------------------------------------------------------------------------------------------------------------------------
-
-# rosdep update error:  
-reading in sources list data from /etc/ros/rosdep/sources.list.d  
-ERROR: unable to process source [https://raw.githubusercontent.com/ros/rosdistro/master/rosdep/osx-homebrew.yaml]:  
-	<urlopen error [Errno 111] Connection refused> (https://raw.githubusercontent.com/ros/rosdistro/master/rosdep/osx-homebrew.yaml)  
-  
-try mutiple times?  
-
-----------------------------------------------------------------------------------------------------------------------------------------
-
 # Jetson Nano利用官方镜像进行安装后，系统已经安装好了JetPack，cuda，cudaa，OpenCV等组件，需要修改下环境变量才可以使用。
 sudo gedit ~./bashrc  
 文件的最后添加以下三行：  
@@ -94,13 +72,6 @@ export LANGUAGE=en_US:en
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
-# gazebo7 need by libcurl3, but cmake, ros need by libcurl4, and libcurl3 and libcurl4 cannot exit torgether!!!
-install gazebo9  
-
-# before camke jetson-reinforcement, gazebo9, qt4, pip, pip3 jupyter/ipython notebook need to be installed, cuda env path need to be set 
-sudo apt-get install qt4*  
-sudo apt-get install gazebo9  
-
 # install tensorflow-gpu  
 https://zhuanlan.zhihu.com/p/98459357  
 sudo apt-get install python3-pip  
@@ -110,6 +81,13 @@ sudo pip3 install launchpadlib
 sudo  pip3 install --upgrade setuptools  
 sudo pip3 install --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v42 tensorflow-gpu==1.14.0+nv19.10   
 
+----------------------------------------------------------------------------------------------------------------------------------------
+
+# 调用TensorFlow时出现FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecate  
+sudo pip3 install numpy==1.16.4  
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
 # install ros  
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'  
 sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654  
@@ -117,3 +95,15 @@ sudo apt update
 sudo apt install ros-melodic-desktop-full  
 sudo rosdep init  
 rosdep update  
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+# install vscode  
+https://packagecloud.io/headmelted/codebuilds/packages/debian/stretch/code-oss_1.32.0-1550644676_arm64.deb/download.deb  
+sudo dpkg -i code-oss_1.32.0-1550644676_arm64.deb  
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+# install gym  
+git clone https://github.com/openai/gym.git  
+sudo pip3 install -e .  
