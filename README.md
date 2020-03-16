@@ -72,7 +72,7 @@ export LANGUAGE=en_US:en
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
-# install tensorflow-gpu  
+# pip3 install tensorflow-gpu  
 https://zhuanlan.zhihu.com/p/98459357  
 sudo apt-get install python3-pip  
 python3 -m pip install --upgrade pip  
