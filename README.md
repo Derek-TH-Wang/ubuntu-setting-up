@@ -107,3 +107,8 @@ sudo dpkg -i code-oss_1.32.0-1550644676_arm64.deb
 # install gym  
 git clone https://github.com/openai/gym.git  
 sudo pip3 install -e .  
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+# 由于没有公钥，无法验证下列签名： NO_PUBKEY 0CC3FD642696BFC8  
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 0CC3FD642696BFC8  
