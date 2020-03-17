@@ -140,3 +140,10 @@ sudo pip3 install -e .
 ```
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 0CC3FD642696BFC8  
 ```
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+## openai_ros fetch robot catkin_make  find package error: spawn_robot_tools_pkg  
+```
+git clone https://bitbucket.org/theconstructcore/spawn_robot_tools.git
+```
