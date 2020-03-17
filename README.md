@@ -1,7 +1,8 @@
 # jetson-nano-trick
-
+```
 https://blog.csdn.net/dvd_sun/article/details/88975005  
 http://www.manongjc.com/detail/8-ljslmgmshdpltfd.html  
+```
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
