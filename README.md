@@ -93,9 +93,10 @@ sudo pip3 install --extra-index-url https://developer.download.nvidia.com/comput
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
-## pip2 install tensorflow occur error: ERROR: Could not find a version that satisfies the requirement tenserflow==1.12.0 (from versions: none), ERROR: No matching distribution found for tenserflow==1.12.0  
+## pip2 install tensorflow-gpu  
 ```
-python2 -m pip install --upgrade https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.12.0-py2-none-any.whl  
+download: https://developer.download.nvidia.cn/compute/redist/jp/v41/tensorflow-gpu/  
+sudo pip2 install tensorflow_gpu-1.13.0rc0+nv19.2-cp27-cp27mu-linux_aarch64.whl  
 ```
 
 ----------------------------------------------------------------------------------------------------------------------------------------
