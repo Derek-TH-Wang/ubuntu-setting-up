@@ -147,3 +147,13 @@ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 0CC3FD642696BFC8
 ```
 git clone https://bitbucket.org/theconstructcore/spawn_robot_tools.git
 ```
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+## gazebo preparing your world  
+```
+sudo apt-get install mercurial
+hg clone https://bitbucket.org/osrf/gazebo_models models
+```
+
+----------------------------------------------------------------------------------------------------------------------------------------
