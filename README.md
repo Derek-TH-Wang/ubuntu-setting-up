@@ -148,3 +148,19 @@ hg clone https://bitbucket.org/osrf/gazebo_models models
 ```
 
 ----------------------------------------------------------------------------------------------------------------------------------------
+
+## install pytorch1.4  
+```
+sudo apt-get install libopenblas-base  
+```
+python2:  
+```
+download:https://nvidia.box.com/v/torch-1-4-cp27-jetson-jp43  
+sudo pip2 install torch-1.4.0-cp27-cp27mu-linux_aarch64.whl  
+```
+python3.6:  
+```
+download:https://nvidia.box.com/v/torch-1-4-cp36-jetson-jp43  
+sudo pip3 install Cython  
+sudo pip3 install numpy torch-1.4.0-cp36-cp36m-linux_aarch64.whl  
+```
