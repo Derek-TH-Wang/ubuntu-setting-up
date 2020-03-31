@@ -164,3 +164,13 @@ download:https://nvidia.box.com/v/torch-1-4-cp36-jetson-jp43
 sudo pip3 install Cython  
 sudo pip3 install numpy torch-1.4.0-cp36-cp36m-linux_aarch64.whl  
 ```
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+## install tianshou  
+first install pytorch1.4 in python3  
+then,  
+```
+sudo pip3 install sphinxcontrib-bibtex
+sudo pip3 install git+https://github.com/thu-ml/tianshou.git@master
+```
