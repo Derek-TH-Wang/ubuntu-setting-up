@@ -188,8 +188,10 @@ sudo pip3 install git+https://github.com/thu-ml/tianshou.git@master
 
 ## python2 launch tensorboard err: cannot import _massage  
 ```
-alias tensorboard='python3 PATH/tensorboard/main.py'  
 PATH: pip3 show tensorboard  
+sudo gedit ~/.bashrc
+alias tensorboard='python3 PATH/tensorboard/main.py'  
+source ~/.bashrc
 ```
 
 ----------------------------------------------------------------------------------------------------------------------------------------
