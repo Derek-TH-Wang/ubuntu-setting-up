@@ -4,6 +4,15 @@
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
+## change system python version:  
+```
+sudo gedit ~/.bashrc  
+alias python='/usr/bin/pythonx.x'  
+source ~/.bashrc
+```
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
 ## jetson nano sudo apt-get update ----> 404 not fuund:  
 ```
 (1)  
@@ -174,3 +183,13 @@ then,
 sudo pip3 install sphinxcontrib-bibtex
 sudo pip3 install git+https://github.com/thu-ml/tianshou.git@master
 ```
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+## python2 launch tensorboard err: cannot import _massage  
+```
+alias tensorboard='python3 PATH/tensorboard/main.py'  
+PATH: pip3 show tensorboard  
+```
+
+----------------------------------------------------------------------------------------------------------------------------------------
