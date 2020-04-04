@@ -1,3 +1,15 @@
+# Unbutu-desktop  
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+## install cuda10:  
+```
+wget http://developer.download.nvidia.com/compute/cuda/10.2/Prod/local_installers/cuda_10.2.89_440.33.01_linux.run  
+sudo sh cuda_10.2.89_440.33.01_linux.run  
+```
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
 # jetson-nano-trick
 -  https://blog.csdn.net/dvd_sun/article/details/88975005  
 -  http://www.manongjc.com/detail/8-ljslmgmshdpltfd.html  
