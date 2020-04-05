@@ -21,7 +21,7 @@ make sure the default graphics card is nvidia gtx
 wget http://developer.download.nvidia.com/compute/cuda/10.2/Prod/local_installers/cuda_10.2.89_440.33.01_linux.run  
 sudo sh cuda_10.2.89_440.33.01_linux.run  
 ```
-to checkout:  
+### to checkout:  
 ```
 cd /usr/local/cuda/samples/1_Utilities/deviceQuery  
 sudo make  
@@ -33,7 +33,7 @@ sudo dpkg -i libcudnn7-dev_7.6.5.32-1+cuda10.2_amd64.deb
 sudo dpkg -i libcudnn7_7.6.5.32-1+cuda10.2_amd64.deb  
 sudo dpkg -i libcudnn7-doc_7.6.5.32-1+cuda10.2_amd64.deb  
 ```
-to checkout:  
+### to checkout:  
 ```
 sudo cp -r cudnn_samples_v7/ ~  
 sudo chmod  -R 777 cudnn_samples_v7/  
@@ -70,11 +70,29 @@ sudo pip2 install launchpadlib
 sudo  pip2 install --upgrade setuptools  
 sudo pip2 install tensorflow_gpu-1.14.0-cp27-cp27mu-manylinux1_x86_64.whl 
 ```
-to checkout:  
+### to checkout:  
 ```
 import tensorflow as tf
 tf.__version__
 tf.__path__
+```
+----------------------------------------------------------------------------------------------------------------------------------------
+
+## install pytorch1.4:  
+down .whl file from website:  
+- https://download.pytorch.org/whl/torch_stable.html
+### python3:  
+```
+sudo pip3 install torch-1.4.0+cu92-cp36-cp36m-linux_x86_64.whl  
+```
+### python2:  
+```
+sudo pip3 install torch-1.4.0+cu92-cp27-cp27m-linux_x86_64.whl  
+```
+### to checkout:  
+```
+import torch  
+torch.cuda.is_available()  
 ```
 
 ----------------------------------------------------------------------------------------------------------------------------------------
