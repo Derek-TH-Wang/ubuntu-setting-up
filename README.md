@@ -87,7 +87,7 @@ sudo pip3 install torch-1.4.0+cu92-cp36-cp36m-linux_x86_64.whl
 ```
 ### python2:  
 ```
-sudo pip3 install torch-1.4.0+cu92-cp27-cp27m-linux_x86_64.whl  
+sudo pip2 install torch-1.4.0+cu92-cp27-cp27m-linux_x86_64.whl  
 ```
 ### to checkout:  
 ```
