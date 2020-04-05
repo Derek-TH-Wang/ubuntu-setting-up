@@ -39,6 +39,36 @@ sudo ./mnistCUDNN
 ```
 ----------------------------------------------------------------------------------------------------------------------------------------
 
+## install tensorflow-gpu:
+down .whl file from website:  
+-- https://pypi.org/project/tensorflow-gpu/1.14.0/#files  
+### python3:  
+```
+sudo apt-get install python3-pip  
+python3 -m pip install --upgrade pip  
+sudo apt install python3-numpy python3-scipy python3-pandas python3-matplotlib python3-sklearn libhdf5-serial-dev hdf5-tools  
+sudo pip3 install testresources  
+sudo pip3 install launchpadlib  
+sudo  pip3 install --upgrade setuptools  
+sudo pip3 install tensorflow_gpu-1.14.0-cp36-cp36m-manylinux1_x86_64.whl  
+```
+if import occur: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecate  
+```
+sudo pip3 install numpy==1.16.4  
+```
+### python2:  
+```
+sudo apt-get install python-pip  
+python -m pip2 install --upgrade pip  
+sudo apt install python-numpy python-scipy python-pandas python-matplotlib python-sklearn libhdf5-serial-dev hdf5-tools  
+sudo pip2 install testresources  
+sudo pip2 install launchpadlib  
+sudo  pip2 install --upgrade setuptools  
+sudo pip2 install tensorflow_gpu-1.14.0-cp27-cp27mu-manylinux1_x86_64.whl 
+```
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
 # jetson-nano-trick
 -  https://blog.csdn.net/dvd_sun/article/details/88975005  
 -  http://www.manongjc.com/detail/8-ljslmgmshdpltfd.html  
