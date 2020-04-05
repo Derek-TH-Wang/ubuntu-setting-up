@@ -2,10 +2,13 @@
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
-## install cuda10.2:  
+## install cuda10.2+cudnn:  
 - https://blog.csdn.net/qq_32408773/article/details/84112166  
 - https://blog.csdn.net/u010801439/article/details/80483036  
 - https://www.jianshu.com/p/54d30904ed3e  Part2
+- https://docs.nvidia.com/deeplearning/sdk/cudnn-install/index.html
+
+### cuda:  
 ```
 ubuntu-drivers devices  
 sudo ubuntu-drivers autoinstall  
@@ -20,7 +23,20 @@ cd /usr/local/cuda/samples/1_Utilities/deviceQuery
 sudo make  
 sudo ./deviceQuery  
 ```
-
+### cudnn:  
+```
+sudo dpkg -i libcudnn7-dev_7.6.5.32-1+cuda10.2_amd64.deb  
+sudo dpkg -i libcudnn7_7.6.5.32-1+cuda10.2_amd64.deb  
+sudo dpkg -i libcudnn7-doc_7.6.5.32-1+cuda10.2_amd64.deb  
+```
+to checkout:  
+```
+sudo cp -r cudnn_samples_v7/ ~  
+sudo chmod  -R 777 cudnn_samples_v7/  
+cd ~/RL/cudnn_samples_v7/mnistCUDNN  
+make  
+sudo ./mnistCUDNN  
+```
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 # jetson-nano-trick
