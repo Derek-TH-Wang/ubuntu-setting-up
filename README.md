@@ -2,10 +2,10 @@
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
-## install cuda10:  
+## install cuda10.2:  
 - https://blog.csdn.net/qq_32408773/article/details/84112166  
 - https://blog.csdn.net/u010801439/article/details/80483036  
-- https://www.cnblogs.com/wolflzc/p/9117291.html
+- https://www.jianshu.com/p/54d30904ed3e  Part2
 ```
 ubuntu-drivers devices  
 sudo ubuntu-drivers autoinstall  
@@ -13,6 +13,12 @@ sudo reboot
 查看系统信息，显卡是否更换为独显
 wget http://developer.download.nvidia.com/compute/cuda/10.2/Prod/local_installers/cuda_10.2.89_440.33.01_linux.run  
 sudo sh cuda_10.2.89_440.33.01_linux.run  
+```
+to checkout:  
+```
+cd /usr/local/cuda/samples/1_Utilities/deviceQuery  
+sudo make  
+sudo ./deviceQuery  
 ```
 
 ----------------------------------------------------------------------------------------------------------------------------------------
