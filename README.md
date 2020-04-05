@@ -70,6 +70,12 @@ sudo pip2 install launchpadlib
 sudo  pip2 install --upgrade setuptools  
 sudo pip2 install tensorflow_gpu-1.14.0-cp27-cp27mu-manylinux1_x86_64.whl 
 ```
+to checkout:  
+```
+import tensorflow as tf
+tf.__version__
+tf.__path__
+```
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
