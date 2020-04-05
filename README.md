@@ -11,9 +11,13 @@
 ### cuda:  
 ```
 ubuntu-drivers devices  
-sudo ubuntu-drivers autoinstall  
+sudo add-apt-repository ppa:graphics-drivers/ppa  
+sudo apt-get update  
+sudo apt-get install nvidia-driver-440 nvidia-settings  
 sudo reboot  
-查看系统信息，显卡是否更换为独显
+```
+make sure the default graphics card is nvidia gtx
+```
 wget http://developer.download.nvidia.com/compute/cuda/10.2/Prod/local_installers/cuda_10.2.89_440.33.01_linux.run  
 sudo sh cuda_10.2.89_440.33.01_linux.run  
 ```
