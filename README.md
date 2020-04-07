@@ -41,6 +41,7 @@ cd ~/RL/cudnn_samples_v7/mnistCUDNN
 make  
 sudo ./mnistCUDNN  
 ```
+
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 ## install tensorflow-gpu:
@@ -76,6 +77,7 @@ import tensorflow as tf
 tf.__version__
 tf.__path__
 ```
+
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 ## install pytorch1.4:  
@@ -93,6 +95,18 @@ sudo pip2 install torch-1.4.0+cu92-cp27-cp27m-linux_x86_64.whl
 ```
 import torch  
 torch.cuda.is_available()  
+```
+
+----------------------------------------------------------------------------------------------------------------------------------------
+## Err:10 http://mirrors.ustc.edu.cn/ubuntu xenial/main arm64 Packages，404  Not Found [IP: 202.141.176.110 80]  
+
+- https://blog.csdn.net/CCCCXXXXGGGG/article/details/104287484  
+```
+dpkg --print-foreign-architectures
+sudo rm -rf /var/lib/apt/lists/*
+sudo apt-get remove .*:arm64
+sudo dpkg --remove-architecture arm64
+sudo apt-get update
 ```
 
 ----------------------------------------------------------------------------------------------------------------------------------------
