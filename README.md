@@ -12,36 +12,34 @@
 
 ### cuda:  
 ```
-ubuntu-drivers devices  
-sudo add-apt-repository ppa:graphics-drivers/ppa  
-sudo apt-get update  
-sudo apt-get install nvidia-driver-440 nvidia-settings  
-sudo reboot  
+ubuntu-drivers devices
+sudo add-apt-repository ppa:graphics-drivers/ppa
+sudo apt-get update
+sudo apt-get install nvidia-driver-440 nvidia-settings
+sudo reboot
 ```
 make sure the default graphics card is nvidia gtx
 ```
-wget http://developer.download.nvidia.com/compute/cuda/10.2/Prod/local_installers/cuda_10.2.89_440.33.01_linux.run  
-sudo sh cuda_10.2.89_440.33.01_linux.run  
+wget http://developer.download.nvidia.com/compute/cuda/10.2/Prod/local_installers/cuda_10.2.89_440.33.01_linux.run
+sudo sh cuda_10.2.89_440.33.01_linux.run
 ```
 ### to checkout:  
 ```
-cd /usr/local/cuda/samples/1_Utilities/deviceQuery  
-sudo make  
-sudo ./deviceQuery  
+cd /usr/local/cuda/samples/1_Utilities/deviceQuery
+sudo make
+sudo ./deviceQuery
 ```
 ### cudnn:  
 ```
-sudo dpkg -i libcudnn7_7.6.5.32-1+cuda10.2_amd64.deb  
-sudo dpkg -i libcudnn7-dev_7.6.5.32-1+cuda10.2_amd64.deb  
-sudo dpkg -i libcudnn7-doc_7.6.5.32-1+cuda10.2_amd64.deb  
+sudo dpkg -i libcudnn7_7.6.5.32-1+cuda10.2_amd64.deb
+sudo dpkg -i libcudnn7-dev_7.6.5.32-1+cuda10.2_amd64.deb
+sudo dpkg -i libcudnn7-doc_7.6.5.32-1+cuda10.2_amd64.deb
 ```
 ### to checkout:  
 ```
-sudo cp -r cudnn_samples_v7/ ~  
-sudo chmod  -R 777 cudnn_samples_v7/  
-cd ~/RL/cudnn_samples_v7/mnistCUDNN  
-make  
-sudo ./mnistCUDNN  
+cd /usr/src/cudnn_samples_v7/mnistCUDNN
+sudo make
+sudo ./mnistCUDNN
 ```
 
 ----------------------------------------------------------------------------------------------------------------------------------------
