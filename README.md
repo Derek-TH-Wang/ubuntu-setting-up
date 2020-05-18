@@ -192,7 +192,7 @@ source ~/.bashrc
 
 ## start jupyter-notebook occur error: UnicodeDecodeError: 'ascii' codec can't decode byte 0xe5 in position 4: ordinal not in range(128)  
 ```
-sudo gedit ~./bashrc  
+sudo gedit ~/.bashrc  
 文件的最后添加以下：  
 export LANG=en_US:UTF-8  
 export LANGUAGE=en_US:en  
