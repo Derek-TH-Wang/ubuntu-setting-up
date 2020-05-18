@@ -184,7 +184,7 @@ sudo gedit ~./bashrc
 export PATH=/usr/local/cuda-10.0/bin:$PATH  
 export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH  
 export CUDA_HOME=$CUDA_HOME:/usr/local/cuda-10.0  
-source ~./bashrc  
+source ~/.bashrc  
 输入nvcc -V命令进行测试  
 ```
 
