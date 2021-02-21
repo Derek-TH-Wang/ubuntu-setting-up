@@ -76,6 +76,7 @@ sudo pip2 install tensorflow_gpu-1.14.0-cp27-cp27mu-manylinux1_x86_64.whl
 import tensorflow as tf
 tf.__version__
 tf.__path__
+tf.test.is_gpu_available()
 ```
 
 ----------------------------------------------------------------------------------------------------------------------------------------
